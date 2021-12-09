@@ -36,7 +36,7 @@ Before you get started, please take a few minutes and get acquainted with this a
 
 - You'll also notice inside of our `App.js` we have 3 components. A navigation component and two route based components. Each of those components are all being passed either our `cart` state or `product` state as props, when we start to scale our application and add more props our codebase is going to start to become very cumbersome and will make our application hard to work with.
 
-- To combat this from happening we're going to refactor our application to use `Context API`, making it easier and more effiecent to access data across our application.
+- To combat this from happening we're going to refactor our application to use `Context API`, making it easier and more efficient to access data across our application.
 
 **Step 1 - Add item functionality**
 
@@ -96,7 +96,7 @@ Before you get started, please take a few minutes and get acquainted with this a
 const { products, addItem } = useContext(ProductContext);
 ```
 
-- Now that we have all of the data we need we can refactor our `Products` component from using props.
+- Now that we have all the data we need, we can refactor our `Products` component from using props.
 
 - To do so we just need to remove every instance of `props`.
 
@@ -104,7 +104,7 @@ const { products, addItem } = useContext(ProductContext);
   - Remove it from the products map
   - Remove it from addItem prop
 
-- Now our `Products` component is getting it's data solely from `Context API` 😃.
+- Now our `Products` component is getting its data solely from `Context API` 😃.
 
 **STEP 5 - Create the CartContext**
 
